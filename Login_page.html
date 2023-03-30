@@ -86,47 +86,57 @@
     </style>
 </head>
 <body>
-    <div calss="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
-          <div class="container-fluid">
-            <img src="images/favicon.png" alt="logo_Failed" height="70px" width="70px">
-            <a id="a1" class="navbar-brand" href="index.html">Travel W<img id="globle" src="images/globe-unscreen.gif">rld</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Places</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="loginBtn">Calculator</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact us</a>
-                </li>
-                
-    
-              </ul>
-              <a href="SignUp.html" class="btn btn-outline-secondary mx-2 my-2"><span id="log">SignUp</span></a>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success mx-1 my-2" type="submit">Search</button>
-              </form>
-            </div>
+  <div calss="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <img src="images/favicon.png" alt="logo_Failed" height="50px" width="50px">
+        <a class="navbar-brand" href="index.html">Travel W<img id="globle" src="images/globe-unscreen.gif">rld</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="navbarOffcanvasLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
           </div>
-        </nav>
+          <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Places</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="loginBtn">Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+          <a href="Login_page.html" class="btn btn-outline-secondary mx-2 my-2"><span id="log">Signup</span></a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 mx-2 my-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success mx-2 my-2" type="submit">Search</button>
+          </form>
+          </div>
+        </div>
       </div>
+    </nav>
+  </div>
    <div class="bg-image"></div>
     <div class="bg-text">
         <form id="login_form" action="Login1.html" method="get">
@@ -134,7 +144,7 @@
         <input type="email" placeholder="Email" required="">
         <input type="password" placeholder="Enter Your Password" required="">
         <input id="login_button" type="submit" value="Login"></input> <br><br>
-        <a class="a1" href="forgotpassword.html">Forgot Password?</a>
+        <a class="a1" href="forgot.html">Forgot Password?</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="a1" href="SignUp.html">Create Account</a>
     </form>
