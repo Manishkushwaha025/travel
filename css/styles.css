@@ -406,8 +406,9 @@ footer {
  } 
   .login-box {
 position: absolute;
-top: 30%;
+top: 15%;
 left: 50%;
+transform: translate(-50%);
 width: 450px;
 padding: 40px;
 background: rgba(0,0,0,.9);
