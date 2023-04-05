@@ -29,10 +29,11 @@ a {
 }
 .row img {
   max-width: 100%;
-  justify-content:center;
   height: auto;
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 200px;
 }
 
 .gallery ul li {
@@ -52,8 +53,9 @@ a {
   line-height: 0.8;
   font-family: "Montserrat", sans-serif;
 }
+
 header {
-  background-color: #454545;
+  background-color:#454545;
   color: #fff;
   text-align: center;
 }
@@ -70,7 +72,7 @@ header h1 {
 header h1 span {
   text-transform: uppercase;
   letter-spacing: 7px;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1;
 }
 header p {
@@ -81,30 +83,32 @@ header p {
   background-color: black;
 }
 
+
 video {
   display: block;
-  margin:0 auto;
+  margin: auto;
+  width:60%;
+  object-fit:cover;
+  
 }
+
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  padding: 0px;
+  padding: 0px 0 10px;
   position: relative;
   overflow: hidden;
 }
+
 .gallery ul {
-  justify-content:center;
+  padding-top: 10px;
   position: relative;
 }
+
 .gallery ul li {
   margin-bottom: 20px;
   width: 23.24561%;
-  justify-content:center;
   position: relative;
 }
+
 .gallery ul li a {
   display: block;
   position: relative;
@@ -114,6 +118,7 @@ video {
   padding: 0;
   line-height: 0;
 }
+
 .gallery ul li a:before {
   position: absolute;
   width: 32px;
@@ -152,11 +157,10 @@ video {
 .port {
   position: absolute;
   width: 100%;
-  height: auto;
-  bottom:0;
+  height: 100%;
   top: 0;
   left: 0;
-  padding-top: 50px;
+  padding-top: 100px;
   background: #ffffff;
   background-color: #fafafa;
   z-index: 103;
@@ -169,14 +173,15 @@ video {
   transition: all 0.5s ease-in-out;
 }
 .port img {
-  width: 50%;
-  height: auto;
+  width: 40%;
+  margin-right: 10px;
 }
 .port .description {
   float: left;
   width: 50%;
-  max-height:auto;
+  max-height: 100%;
   padding: 0 40px 40px;
+  overflow: auto;
 }
 .port h1 {
   font-size: 35px;
@@ -218,13 +223,13 @@ video {
 }
 .item_open .close {
   opacity: 1;
-  top: 5px;
+  top: 0px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   
   .gallery ul li {
     margin: 20px;
@@ -234,8 +239,9 @@ video {
   }
 
   .port img {
-    width: 50%;
+    width: 40%;
     height: 200px;
+    margin-right: 20px;
   }
 
   .port {
@@ -256,4 +262,33 @@ video {
     -moz-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
+
+  .row {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: center;
+    padding: 0;
+    clear: both;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 50%;
+  }
+}
+
+
+.gallery {
+  position: relative;
+}
+
+.text-container {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top:90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.9));
+  padding: 20px;
+  color: #fff;
 }
