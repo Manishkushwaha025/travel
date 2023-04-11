@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel World | Home</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="css1/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="icon" sizes="16x16" type="image/png" href="images/favicon.png" />
+  <script src="js1/index.js"></script>
+  <style>
+    #img1 {
+      background-image: url('images/mnb.png');
+      background-clip: text;
+      background-color: black;
+      margin-top: 20px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+  <div style="display: none" id="myDiv" class="animate-bottom">
+
+  <?php include('navbar.html'); ?>
+
+
+    <div class="conatiner-slides">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/tajmahal-01.jpeg" class="d-block h-100px w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Taj Mahal</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/greatwall-01.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Great Wall of China</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/pyramids-01.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Egypt Ptyamid</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/petra-01.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Petra</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/machu-01.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Machu</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/rome-01.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Rome</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/christ-01.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Christ</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <hr class="hr1" />
+    </div>
+
+    <div class="conatiner-img">
+      <img class="image" style="width: 100%" src="images/bgm.png" alt="Image with Text" />
+      <div class="centered">
+        <b>Welcome to Travel World<em style="color: blueviolet; text-shadow: 0 0 5px slateblue">!</em></b>
+        <br /><span id="span1">“The journey of a thousand miles begins with a single Step”</span>
+      </div>
+    </div>
+    <hr class="hr1" />
+
+    <!-- calculator code -->
+    <div id="loginModal" display="none">
+      <div id="loginContent">
+        <div id="center">
+          <button id="closeBtn">&times;</button>
+          <div id="calculator1">
+            <h3 id="cal">CALCULATOR</h3>
+            <div id="calculator">
+              <input type="text" id="result" disabled />
+              <input type="button" value="1" onclick="addnum('1')" />
+              <input type="button" value="2" onclick="addnum('2')" />
+              <input type="button" value="3" onclick="addnum('3')" />
+              <input type="button" value="+" onclick="addnum('+')" />
+              <br />
+              <input type="button" value="4" onclick="addnum('4')" />
+              <input type="button" value="5" onclick="addnum('5')" />
+              <input type="button" value="6" onclick="addnum('6')" />
+              <input type="button" value="-" onclick="addnum('-')" />
+              <br />
+              <input type="button" value="7" onclick="addnum('7')" />
+              <input type="button" value="8" onclick="addnum('8')" />
+              <input type="button" value="9" onclick="addnum('9')" />
+              <input type="button" value="*" onclick="addnum('*')" />
+              <br />
+              <input type="button" value="C" onclick="clearResult()" />
+              <input type="button" value="0" onclick="addnum('0')" />
+              <input type="button" value="=" onclick="calculateResult()" />
+              <input type="button" value="/" onclick="addnum('/')" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <h1 id="img1">| Explore more |</h1>
+    </div>
+    <div class="trend-conatiner">
+      <h3 class="font-effect-fire"><strong></strong></h3>
+    </div>
+    <div class="flex-container">
+      <div class="flex-item">
+        <a target="_blank" href=""><img id="india" src="images/india.jfif" alt="failed to load" width="300" height="250" /></a>
+        <div class="image-text">
+          <h1>INDIA</h1>
+        </div>
+      </div>
+      <div class="flex-item">
+        <a target="_blank" href=""><img src="images/dubai.jpg" alt="failed to load" width="300" height="250" /></a>
+        <div class="image-text">
+          <h1>DUBAI</h1>
+        </div>
+      </div>
+      <div class="flex-item">
+        <a target="_blank" href=""><img src="images/russia.jpg" alt="failed to load" width="300" height="250" /></a>
+        <div class="image-text">
+          <h1>RUSSIA</h1>
+        </div>
+      </div>
+      <div class="flex-item">
+        <a target="_blank" href=""><img src="images/israel.jpg" alt="failed to load" width="300" height="250" /></a>
+        <div class="image-text">
+          <h1>ISREAL</h1>
+        </div>
+      </div>
+      <div class="flex-item">
+        <a target="_blank" href=""><img src="images/tower.jpg" alt="failed to load" width="300" height="250" /></a>
+        <div class="image-text">
+          <h1>FRANCE</h1>
+        </div>
+      </div>
+      <div class="flex-item">
+        <a target="_blank" href=""><img src="images/israel.jpg" alt="failed to load" width="300" height="250" /></a>
+        <div class="image-text">
+          <h1>ISREAL</h1>
+        </div>
+      </div>
+      <div class="flex-item">
+        <a target="_blank" href=""><img src="images/israel.jpg" alt="failed to load" width="300" height="250" /></a>
+        <div class="image-text">
+          <h1>ISREAL</h1>
+        </div>
+      </div>
+      <div class="flex-item">
+        <a target="_blank" href=""><img src="images/israel.jpg" alt="failed to load" width="300" height="250" /></a>
+        <div class="image-text">
+          <h1>ISREAL</h1>
+        </div>
+      </div>
+      <div class="flex-item">
+        <a target="_blank" href=""><img src="images/israel.jpg" alt="failed to load" width="300" height="250" /></a>
+        <div class="image-text">
+          <h1>ISREAL</h1>
+        </div>
+      </div>
+    </div>
+
+
+    <header>
+      <h1>Gallery <br> <span>[ Most Visited Place ]</span></h1>
+    </header>
+
+    <div id="top"></div>
+    <div class="gallery">
+      <div class="row">
+        <ul>
+          <a href="#" class="close"></a>
+          <li>
+            <a href="#item01">
+              <img src="images/Forbidden-city.jpg" alt="Forbidden-city.jpg">
+            </a>
+            <div class="text-container">
+              <h6>Forbidden City</h6>
+            </div>
+          </li>
+
+          <li>
+            <a href="#item02">
+              <img src="images/St. Peter's Basilica.jpg" alt="St. Peter's Basilica">
+            </a>
+            <div class="text-container">
+              <h6>St. Peter's Basilica</h6>
+            </div>
+          </li>
+
+          <li>
+            <a href="#item03">
+              <img src="images/Palace of Versailles.jpg" alt="Palace of Versailles">
+            </a>
+            <div class="text-container">
+              <h6>Palace of Versailles</h6>
+            </div>
+          </li>
+          <li>
+            <a href="#item04">
+              <img src="images/Lincoln Memorial.jpg" alt="Lincoln Memorial">
+            </a>
+            <div class="text-container">
+              <h6>Lincoln Memorial</h6>
+            </div>
+          </li>
+          <li>
+            <a href="#item05">
+              <img src="images/Colosseum.jpg" alt="Colosseum">
+            </a>
+            <div class="text-container">
+              <h6>Colosseum</h6>
+            </div>
+          </li>
+          <li>
+            <a href="#item06">
+              <img src="images/Parthenon.jpg" alt="Parthenon">
+            </a>
+            <div class="text-container">
+              <h6>Parthenon</h6>
+            </div>
+          </li>
+          <li>
+            <a href="#item07">
+              <img src="images/Eiffel Tower.jpg" alt="Eiffel Tower">
+            </a>
+            <div class="text-container">
+              <h6>Eiffel Tower</h6>
+            </div>
+          </li>
+          <li>
+            <a href="#item08">
+              <img src="images/Taj Mahal.jpg" alt="Taj Mahal">
+            </a>
+            <div class="text-container">
+              <h6>Taj Mahal</h6>
+            </div>
+          </li>
+          <li>
+            <a href="#item08">
+              <img src="images/Taj Mahal.jpg" alt="Taj Mahal">
+            </a>
+            <div class="text-container">
+              <h6>Taj Mahal</h6>
+            </div>
+          </li>
+          <li>
+            <a href="#item08">
+              <img src="images/Taj Mahal.jpg" alt="Taj Mahal">
+            </a>
+            <div class="text-container">
+              <h6>Taj Mahal</h6>
+            </div>
+          </li>
+          <li>
+            <a href="#item08">
+              <img src="images/Taj Mahal.jpg" alt="Taj Mahal">
+            </a>
+            <div class="text-container">
+              <h6>Taj Mahal</h6>
+            </div>
+          </li>
+          <li>
+            <a href="#item08">
+              <img src="images/Taj Mahal.jpg" alt="Taj Mahal">
+            </a>
+            <div class="text-container">
+              <h6>Taj Mahal</h6>
+            </div>
+          </li>
+        </ul>
+      </div> <!-- / row -->
+
+      <!-- Item 01 -->
+      <div id="item01" class="port">
+        <div class="row">
+          <div class="description">
+            <h1>Forbidden City</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est.
+              Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+          </div>
+          <img src="images/Forbidden-city.jpg" alt="Forbidden-city">
+        </div>
+      </div>
+
+      <div id="item02" class="port">
+        <div class="row">
+          <div class="description">
+            <h1>St. Peter's Basilica</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est.
+              Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+          </div>
+          <img src="images/St. Peter's Basilica.jpg" alt="Forbidden-city">
+        </div>
+      </div>
+
+      <div id="item03" class="port">
+        <div class="row">
+          <div class="description">
+            <h1>Palace of Versailles</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est.
+              Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+          </div>
+          <img src="images/Palace of Versailles.jpg" alt="Forbidden-city">
+        </div>
+      </div>
+
+      <div id="item03" class="port">
+        <div class="row">
+          <div class="description">
+            <h1>Palace of Versailles</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est.
+              Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+          </div>
+          <img src="images/Palace of Versailles.jpg" alt="Forbidden-city">
+        </div>
+      </div>
+
+      <div id="item03" class="port">
+        <div class="row">
+          <div class="description">
+            <h1>Palace of Versailles</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est.
+              Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+          </div>
+          <img src="images/Palace of Versailles.jpg" alt="Forbidden-city">
+        </div>
+      </div>
+
+      <div id="item03" class="port">
+        <div class="row">
+          <div class="description">
+            <h1>Palace of Versailles</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est.
+              Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+          </div>
+          <img src="images/Palace of Versailles.jpg" alt="Forbidden-city">
+        </div>
+      </div>
+
+      <div id="item03" class="port">
+        <div class="row">
+          <div class="description">
+            <h1>Palace of Versailles</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est.
+              Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+          </div>
+          <img src="images/Palace of Versailles.jpg" alt="Forbidden-city">
+        </div>
+      </div>
+
+      <div id="item03" class="port">
+        <div class="row">
+          <div class="description">
+            <h1>Palace of Versailles</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est.
+              Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+          </div>
+          <img src="images/Palace of Versailles.jpg" alt="Forbidden-city">
+        </div>
+      </div>
+    </div>
+    </section> <!-- / projects -->
+
+    <hr class="hr1" />
+    <div class="conatiner">
+      <h1 style="text-align: center;">Site under Maintenance &#x26A0</h1>
+    </div>
+    <script>
+      $('.gallery ul li a').click(function() {
+        var itemID = $(this).attr('href');
+        $('.gallery ul').addClass('item_open');
+        $(itemID).addClass('item_open');
+        return false;
+      });
+
+      $('.close').click(function() {
+        $('.port, .gallery ul').removeClass('item_open');
+        return false;
+      });
+
+      $(".gallery ul li a").click(function() {
+        $('html, body').animate({
+          scrollTop: parseInt($("#top").offset().top)
+        }, 400);
+      });
+    </script>
+    <script>
+      window.addEventListener("load", function() {
+        setTimeout(function() {
+          const loader = document.getElementById("loader-wrapper");
+          loader.style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }, 3000);
+      });
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <header class="vid">
+      <video height="120px" src="images/Thank you.mp4" autoplay loop controls></video>
+    </header>
+    <hr class="hr1" />
+    <footer>
+      <hr class="hr2" />
+      <p class="text-center">
+        &copy; 2023 Travel World. All Rights Reserved.
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
